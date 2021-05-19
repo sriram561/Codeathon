@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | Codeathon</title>
+    <link rel="stylesheet" href='style.css'>
+<!--     <script type="text/javascript" src="script.js"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Mali&family=Patua One&family=Lora&family=Bebas Neue&family=Merriweather:wght@700&family=Newsreader&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="topnav" id="dropDownMenu">
+    <header class="flex-container">
+        <nav>
+            <div style="flex-grow: 10;">
+            <!-- <img src="/images/ACM_logo.png"> -->
+            <h1>ACM <span>CODEATHON</span></h1>
+            </div>
+            <ul id="navbar" style="flex-grow: 2;" >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#results">Results</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li class="dropDown"><a href="javascript:void(0);" onclick="dropDownClick()">&#9776;</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+        <script>
+        
+        function dropDownClick(){
+            x= document.getElementById("dropDownMenu");
+            if(x.className==="topnav")
+            {
+                x.className += " responsive";
+
+            }
+        else{
+            x.className = "topnav";
+        }
+            console.log(x.className);
+        }
+        
+        
+        
+        </script>
+    
+    </div>
+
+    <div class="main-banner fade-in-text">
+        
+            <h3>WELCOME TO ACM CODEATHON RESULTS PAGE.</h3>
+
+            <h1>“First, <em>solve</em> the problem. <br>Then, write the <em>code</em> ”</h1>
+    </div>
+    <div class="coding-banner">
+        <div id="result-card" style="flex-grow: 4;"><img src="/images/20210519_120509.png" width="300px"></div>
+        <div style="flex-grow: 4"><h1>Check your <br>results here.</h1></div>
+      <div style="flex-grow: 4">   
+     <img id="sitting-man" src="images/—Pngtree—businessman sitting on office chair_5325709.png " width="400px" >
+      </div> 
+        
+    </div>
+    <div class="winners" id="results">
+    <h1>Winners</h1>
+    </div>
+      <div class="results-container" id="results">
+        <div class="row">
+       <!-- <div class="col-3"></div> -->
+       <div class="col-4">
+           <div class="photo-frame">
+           <img id="picture" src="images/NicePng_cammy-png_1829287.png">
+           <div><p>Ms.Adorable</div>
+           <div id = "sec"><p>CSE A</p></div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="photo-frame">
+                <img id="picture" src="images/NicePng_cammy-png_1829287.png">            
+                <div><p>Ms.Adorable</p></div>
+                <div id="sec"><p>CSE A</p></div>
+             </div>
+             
+         </div>
+         <div class="col-4">
+            <div class="photo-frame">
+            <img id="picture" src="images/NicePng_cammy-png_1829287.png">            
+             <div><p>Ms.Adorable</p></div> 
+             <div id="sec"><p>CSE A</p></div>
+             </div>
+         </div>
+       <!-- <div class="col-3"></div> -->
+
+    </div>
+    </div>
+
+
+    <div class="prev-winners" id="prev-res">
+        <img  src="images/Winner-Award-Badge-PNG-Image.png" alt="codeathon">
+        <h2>Previous Winners</h2>
+        <img src="images/Winner-Award-Badge-PNG-Image.png" alt="codeathon">
+    </div>
+
+    <center>
+    <table class="table">
+        <thead>
+            <th>S.No</th>
+            <th>Month</th>
+            <th>Date</th>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="S.No">Sample</td>
+                <td data-label="Month">Sample</td>
+                <td data-label="Date">Sample</td>
+                <td data-label="Name">Sample</td>
+            </tr>
+            <tr>
+                <td data-label="S.No">Sample</td>
+                <td data-label="Month">Sample</td>
+                <td data-label="Date">Sample</td>
+                <td data-label="Name">Sample</td>
+            </tr>
+            <tr>
+                <td data-label="S.No">Sample</td>
+                <td data-label="Month">Sample</td>
+                <td data-label="Date">Sample</td>
+                <td data-label="Name">Sample</td>
+            </tr>
+            <tr>
+                <td data-label="S.No">Sample</td>
+                <td data-label="Month">Sample</td>
+                <td data-label="Date">Sample</td>
+                <td data-label="Name">Sample</td>
+            </tr>
+            <tr>
+                <td data-label="S.No">Sample</td>
+                <td data-label="Month">Sample</td>
+                <td data-label="Date">Sample</td>
+                <td data-label="Name">Sample</td>
+            </tr>
+        </tbody>
+       </table>
+    </center>
+
+    <div class="About-us" id="about">
+        <div class="row">
+            <div class="col-4">
+                    <h1>About us</h1>
+            </div>
+            <div class="col-8">
+                    <p>ACM Student Chapter of GMRIT is a student driven body charted on 26th August 2016. From its inception, chapter has initiated several activities for the benefit of engineering students of GMRIT and surrounding institutions, school children as well as local community in and around RAJAM.
+                        <br>This website was driven by ACM GMRIT to provide results about Codeathon Event which was conductiong by ACM chapter every month.The students can get current week winners and previous winners which helps them to make improvement and to compete hard to stood 1st.
+                    </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-4"><img src="images/logo.png" ></div>
+            <div class="col-8"><p>ACM Student Chapter | GMR Institute of Technology | 2020</p></div>
+        </div>
+
+
+    </footer>
+        
+</body>
+</html>

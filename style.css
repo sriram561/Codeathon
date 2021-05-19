@@ -1,0 +1,355 @@
+body { padding: 0; margin: 0; }
+
+
+.coding-banner {
+  background-image: url(/images/coding.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 140px 0px 120px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.coding-banner #result-card img{
+  padding-bottom: 150px;
+
+}
+.coding-banner #sitting-man img{
+  padding-bottom: 150px;
+
+}
+
+.coding-banner a{
+  text-decoration: none;
+}
+.coding-banner h1{
+  font-size: 40px;;
+  padding-bottom: 130px;
+  font-family: "Bebas Neue",serif,sans-serif;
+  color:#03a4ed;
+  text-shadow: 10px 10px 30px black;
+}
+
+
+/*--------------Nav Bar------------*/
+.flex-container nav{
+    display: flex;
+    background-color: #fafafa;
+    align-items: center;
+}
+
+/* .flex-container nav img{
+    padding: 10px 0px 10px 50px   ;
+    width:100px;
+} */
+
+.flex-container nav h1{
+    padding: 20px 0px 20px 50px;
+    color: #03a4ed;
+
+}
+
+.flex-container nav h1 span{
+    color: #fe3f40;
+}
+
+#navbar li{
+   display: inline;
+   font-size: larger;
+   font-family: 'Times New Roman', Times, serif;
+   
+}
+
+#navbar li.dropDown{
+  display: none;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color:#2a2a2a;
+    padding-inline-start: 50px;
+    font-family: 'Merriweather',serif;
+}
+
+#navbar li a:hover{
+    color:#fe3f40;
+}
+
+/* ------------Mobile Responsive---------- */
+
+@media screen and (max-width: 680px) {
+    /* .flex-container nav img{
+        width:80px;
+        padding: 10px 0px 10px 20px ;
+    } */
+    #navbar li{
+      display: none;
+    }
+
+    #navbar li.dropDown{
+      display: block;
+      padding-right: 30px;
+      font-size: 30px;
+    }
+
+    #navbar li a{
+      padding:0px;
+  }
+
+
+  footer .col-4 img{
+    width: 20vw;
+  }
+  footer p{
+    font-size: 10px;
+  }
+    
+    .topnav.responsive{
+        position: relative;
+    }
+    .topnav.responsive #navbar li{
+      display: inline;
+      float:none;
+    }
+    .topnav.responsive #navbar li a:nth-child(1){
+      margin-top: 30px;
+    }
+    .topnav.responsive ul{
+      margin-top: 40px;
+    }
+
+    .topnav.responsive li a{
+      display:block;
+      text-align: left;
+      /* margin-top: 40px;*/
+    } 
+    .topnav.responsive li.dropDown{
+      position:absolute;
+      top:0;
+      right:0;
+    }
+    
+    .About-us .row h1{
+      margin-top: 36vw;
+      font-size: 5vw;
+    }
+
+    .About-us .row p{
+      margin-top: 14vw;
+      font-size: 3vw;
+    }
+
+    #results h1{
+      font-size: 12vw;
+    }
+   
+  }
+
+
+
+/* --------------Main Banner----------- */
+
+.main-banner {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 226px 0px 120px 0px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main-banner:after {
+    content: '';
+    background-image: url(../images/baner-dec-left.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 193px;
+    height: 1000px;
+  }
+  
+  .main-banner:before {
+    content: '';
+    background-image: url(/images/baner-dec-right.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 98px;
+    height: 290px;
+  }
+
+  .main-banner h3{
+      padding-left: 10vw;
+      font-family: 'Lora',serif;
+      color:#fe3f40;
+      margin-bottom: 15px;
+
+  }
+  .main-banner h1{
+    padding-left: 10vw;
+    font-family: 'Lora',serif;
+    color:black;
+    
+
+}
+
+.main-banner h1 em {
+    color:#03a4ed;
+
+}
+
+.fade-in-text {
+    animation: fadeIn linear 3s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+
+
+  /* -----------Rows and Columns----------- */
+  .row{
+      display: flex;
+      width: 100%;
+  }
+
+  .row::after{
+      display: block;
+      clear:both;
+      content: "";
+  }
+  
+  .col-2{width:16.66%}
+  .col-3{width:25%}
+  .col-4{width :33.33%}
+  .col-8{width :66.66%}
+  .col-3{width:41.66%}
+  .col-10{width:83.33%}
+
+
+
+
+  /* ----------Photo-Frames------------ */
+
+  .winners{
+    background: url(/images/Confetti-PNG-Image.png);
+    background-repeat: repeat;
+    background-size: 30vw;
+  }
+  
+.winners h1{
+  font-family: "Satisfy",serif,sans-serif;
+  font-size: 5vw;
+  color:maroon;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+
+  
+.photo-frame{
+  border:2px solid darkgray;
+  flex-direction: column;
+  border-radius: 10%;
+  margin:20px 20px 20px 20px;
+  box-shadow: 5px 5px 5px burlywood;
+}
+.photo-frame img{
+  width:20vw;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-frame p{
+  display: flex;
+  justify-content: center;
+  font-size: 3vw;
+  line-height: 4vw;
+  font-family: "Patua One",serif,sans-serif;
+}
+#sec{
+  color: #fe3f40;;
+}
+
+/* ---------------Previous Winners------------ */
+
+.prev-winners{
+  display: flex;
+  justify-content: center;
+  margin: 4vw 0vw 4vw 0vw;
+}
+
+.prev-winners h2{
+  font-size: 26px;
+  font-family: "Patua One",serif,sans-serif;
+  text-decoration: underline;
+}
+.prev-winners img{
+  width: 100px;
+}
+
+/* ----------table------------ */
+.table{
+  padding:10vw;
+  border-collapse: collapse;
+  margin: 0vw 3vw 4vw 3vw;
+}
+.table td,.table th{
+  width: 15vw;
+  padding:1vw 3vw 1vw 3vw;
+  text-align: center;
+  border:2px solid black;
+}
+
+
+/* -----------About us--------- */
+
+.About-us h1{
+  font-family: "Newsreader",serif,san-serif;
+  margin-top:14vw;
+  margin-left: 5vw;
+  font-size: 3vw;
+  text-align: center;
+  align-items: center;
+}
+
+.About-us p{
+  display: block;
+  font-size: 1.5vw;
+  margin: 8vw 8vw 4vw 2vw;
+  text-align: justify;
+  font-family: "Mali",serif,sans-serif;
+}
+
+.About-us{
+  background: url(/images/about.png);
+  background-repeat:no-repeat;
+  /* background-size: 30vw; */
+}
+/* ------------Footer------------ */
+footer{
+  padding-top: 1vw;
+  background-color: #fafafa;
+}
+
+footer img{
+   
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 10vw;
+}
+
+footer p{
+  /* padding-top:30px; */
+  text-align: center;
+  font-family: "Newsreader",serif,sans-serif;
+}
